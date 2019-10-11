@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>幼教</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+
+<body>
+    <div class="mui-content">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="html/product_presentation.html">产品介绍</a>
+            </li>
+            <li class="mui-table-view-cell mui-collapse mui-active">
+                <a class="mui-navigate-right" href="#">服务</a>
+                <div class="toggle">
+                    <dl class="mui-table-view">
+                        <dt class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">教学</a></dt>
+                        <dd class="mui-table-view-cell">
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/simulate.html">标准课件</a>
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/speaking_lesson.html">教学大纲</a>
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/market_service.html">模拟课程</a>
+                        </dd>
+                        <dt class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="javascript:;">市场</a></dt>
+                        <dd class="mui-table-view-cell">
+                            <div class="toggle1">
+                                <div class="mui-table-view-cell mui-colladivse" style="margin-left:-17px;padding-left:24px;"><a class="mui-navigate-right" href="#">市场招生方案</a></div>
+                                <ol class="mui-table-view">
+                                    <li class="mui-table-view-cell">
+                                        <a class="mui-table-view-cell" href="html/market_enrollment_program.html">10、11月淡季系列活动</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a class="mui-table-view-cell" href="html/student.html">招生方案</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/animation.html">市场招生图片</a>
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/photo.html">市场服务及介绍视频</a>
+                        </dd>
+
+                        <dt class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="javascript:;">装修</a></dt>
+                        <dd class="mui-table-view-cell">
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/fitment_live_action.html">校区装修参考图</a>
+                            <a class="mui-table-view-cell" style="padding-top: 15px;" href="html/Start_program.html">欧美思幼教形象台</a>
+                        </dd>
+                    </dl>
+                </div>
+
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right" href="html/feedback.html">客户反馈</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/mui.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" "></script>
+	<script>
+	$(function(){
+
+		$(".toggle dl dd ").hide();
+
+		$(".toggle dl dt ").on('tap',function(){
+            $(".toggle dl dd ").not($(this).next()).hide();
+            $(this).next().slideToggle(100);
+		});
+
+        $(".toggle1 ol ").hide();
+        
+		$(".toggle1 div ").on('tap',function(){
+            $(".toggle1 ol ").not($(".toggle1 div ").next()).hide();
+            $(".toggle1 div ").next().slideToggle(100);
+		});
+
+		});
+	</script>
+</html>

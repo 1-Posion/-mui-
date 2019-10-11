@@ -1,0 +1,17 @@
+.mui-plus.mui-android header.mui-bar{
+	display: none;
+}
+.mui-plus.mui-android .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+
+.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cel {
+	padding-left:0;
+}
+
+.mui-card {
+	padding:10px !important;
+}
+/*.mui-navigate-right:after {
+    content: '\e581';
+}*/

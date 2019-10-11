@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>优加形象台</title>
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../css/h5-common.css" />
+</head>
+
+<body>
+    <div class="mui-content">
+        <div class="mui-card">
+            <img src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务\3、装修\优加形象台/优加背景1.png">
+        </div>
+        <div class="mui-card">
+            <img src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务\3、装修\优加形象台/优加背景2.png">
+        </div>
+        <div class="mui-card">
+            <img src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务\3、装修\优加形象台/优加背景3.png">
+        </div>
+        <div class="mui-card">
+            <img src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务\3、装修\优加形象台/幼教图二.JPG">
+        </div>
+        <div class="mui-card">
+            <img src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务\3、装修\优加形象台/幼教图一.JPG">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" "></script>
+<script>
+	$(function(){
+		var windowWidth = $(window).width();
+		if(windowWidth >= 640){
+			$(".mui-card ").css('width','640px')
+		}
+		if(navigator.platform) {
+			$(".mui-content ").css('margin','0 auto')
+			$(".mui-content ").css('display','table')
+		}
+	})
+
+</script>

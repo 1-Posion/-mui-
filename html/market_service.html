@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>模拟课堂</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../css/h5-common.css" />
+</head>
+
+<body>
+    <div class="mui-content">
+        <div class="mui-card">
+            <video controls="" name="media" width="100%" poster="../images/1565231682(1).png" src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务/1、教学服务/模拟课程/国学课.mp4" type="video/mp4"></video>
+        </div>
+        <div class="mui-card">
+            <video controls="" name="media" width="100%" poster="../images/1565231763(1).png" src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务/1、教学服务/模拟课程/拼音课.mp4" type="video/mp4"></video>
+        </div>
+        <div class="mui-card">
+            <video controls="" name="media" width="100%" poster="../images/1565231792(1).png" src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务/1、教学服务/模拟课程/识字课1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="mui-card">
+            <video controls="" name="media" width="100%" poster="../images/1565231822(1).png" src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务/1、教学服务/模拟课程/识字课2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="mui-card">
+            <video controls="" name="media" width="100%" poster="../images/1565231863(1).png" src="http://oms-oss.oss-cn-beijing.aliyuncs.com/pro_ext/幼教项目介绍20190715/2、服务/1、教学服务/模拟课程/专注力课.mp4" type="video/mp4"></video>
+        </div>
+
+    </div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" "></script>
+<script>
+	$(function(){
+		var windowWidth = $(window).width();
+		if(windowWidth >= 640){
+			$(".mui-card ").css('width','640px')
+		}
+		if(navigator.platform) {
+			$(".mui-content ").css('margin','0 auto')
+			$(".mui-content ").css('display','table')
+		}
+	})
+
+</script>
+</html>
